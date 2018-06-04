@@ -10,6 +10,10 @@ public class IpConfigMac {
 
 	public static void main(String[] arguments) throws Exception {
 		InetAddress ia = InetAddress.getLocalHost();// 获取本地IP对象
+		System.out.println(ia.getHostName());
+		System.out.println(ia.getHostAddress());
+		System.out.println(ia.getCanonicalHostName());
+		System.out.println(ia.getAddress());
 		System.out.println(ia);
 		System.out.println("MAC ......... " + getMACAddress(ia));
 	}
